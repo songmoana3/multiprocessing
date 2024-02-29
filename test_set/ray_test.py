@@ -23,10 +23,11 @@ def main(count):
 
     # run process and return results
     result = ray.get(result_ids)
+    elapsed_time = time.time() - init
     
     # show results
     print("********Ray Test********")
     print('PID Count : ', len(set(result)))
-    print('Elapsed time', time.time() - init)
+    print(f"Elapsed time : {elapsed_time}")
 
     ray.shutdown()

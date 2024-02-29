@@ -14,8 +14,9 @@ def main(count):
     with multiprocessing.Pool(8) as pool:
         results = pool.starmap(cpu_bound_tutorial, [() for _ in tqdm(range(count))])
         
+    elapsed_time = time.time() - init
     
     # # show results
     print("********Multiprocessing Test********")    
     print('PID Count : ', len(set(results)))
-    print(f"Elapsed time : {time.time() - init}")
+    print(f"Elapsed time : {elapsed_time}")
