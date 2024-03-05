@@ -14,3 +14,4 @@ def main(count):
     elapsed_time = time.time() - init
     
     show_result("Ray", result, elapsed_time)
+    ray.shutdown()
