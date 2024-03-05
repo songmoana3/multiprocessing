@@ -2,7 +2,7 @@
 import time
 import multiprocessing
 from tqdm import tqdm
-from common_func import cpu_bound_tutorial
+from common_func import cpu_bound_tutorial, show_result
 
 
 def main(count):
@@ -17,6 +17,4 @@ def main(count):
     elapsed_time = time.time() - init
     
     # # show results
-    print("********Multiprocessing Test********")    
-    print('PID Count : ', len(set(results)))
-    print(f"Elapsed time : {elapsed_time}")
+    show_result("Multi-Processing", results, elapsed_time)

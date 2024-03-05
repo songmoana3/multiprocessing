@@ -1,6 +1,6 @@
 import time
 from tqdm import tqdm
-from common_func import cpu_bound_tutorial
+from common_func import cpu_bound_tutorial, show_result
 
 
 def main(count):
@@ -13,6 +13,4 @@ def main(count):
     elapsed_time = time.time() - init
 
     # show results
-    print("********Origin Test********")    
-    print('PID Count : ', len(set(results_pid)))
-    print(f"Elapsed time : {elapsed_time}")
+    show_result("Origin", results_pid, elapsed_time)
