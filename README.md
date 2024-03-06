@@ -7,14 +7,14 @@
 - efficient multi-processing library
 
 ## _Test Set_
-1. Circulation test set (complex computation)
-2. image test set (Using HTTP conversation, image I/O)
+1. Calculation test set (complex computation)
+2. Image test set (Using HTTP conversation, image I/O)
 
 ## _Structure_
 ```
 .
 ├── README.md
-├── circulation_test_set
+├── calculation_test_set
 │   ├── multi_processing_test.py
 │   ├── origin_test.py
 │   └── ray_test.py
