@@ -14,21 +14,7 @@
 ```
 .
 ├── README.md
-├── __pycache__
-│   ├── common_func.cpython-310.pyc
-│   ├── common_func.cpython-311.pyc
-│   ├── complicated_func.cpython-311.pyc
-│   ├── decode.cpython-311.pyc
-│   ├── encode.cpython-311.pyc
-│   ├── main.cpython-311-pytest-8.0.2.pyc
-│   ├── main.cpython-311.pyc
-│   ├── main_2.cpython-311.pyc
-│   ├── ray_decode.cpython-311.pyc
-│   ├── ray_encode.cpython-311.pyc
-│   ├── ray_fastapi.cpython-311.pyc
-│   └── ray_fastapi_2.cpython-311.pyc
-├── circulate_test_set
-│   ├── __pycache__
+├── circulation_test_set
 │   ├── multi_processing_test.py
 │   ├── origin_test.py
 │   └── ray_test.py
@@ -36,7 +22,6 @@
 ├── decode.py
 ├── encode.py
 ├── image_test_set
-│   ├── __pycache__
 │   ├── multi_main.py
 │   ├── origin_main.py
 │   └── ray_main.py
